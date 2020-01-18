@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second_Page">
+
+
+    <EditText
+        android:id="@+id/skirts_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Average length of time(years) skirts were owned"
+        android:inputType="number"
+        android:layout_above="@id/pants_time"
+        />
+
+    <EditText
+        android:id="@+id/pants_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Average length of time(years) pants were owned"
+        android:inputType="number"
+        android:layout_above="@id/shirts_time"
+        />
+
+    <EditText
+        android:id="@+id/shirts_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Average length of time(years) shirts were owned"
+        android:inputType="number"
+        android:layout_above="@id/dresses_time"
+        />
+
+    <EditText
+        android:id="@+id/dresses_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Average length of time(years) dresses were owned"
+        android:inputType="number"
+        android:layout_above="@id/second_button"
+        />
+
+    <Button
+        android:id="@+id/second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="200dp"
+        android:text="RESULTS" />
+
+</RelativeLayout>
