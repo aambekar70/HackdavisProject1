@@ -33,7 +33,7 @@ public class Second_Page extends AppCompatActivity {
         int skirts_water = 1310;
 
         Intent intent = getIntent();
-        int clothes[] = intent.getIntArrayExtra("clothes");
+        int[] clothes = intent.getIntArrayExtra("clothes");
 
         EditText shirts_time = (EditText) findViewById(R.id.shirts_time);
         EditText skirts_time = (EditText) findViewById((R.id.skirts_time));
@@ -49,24 +49,34 @@ public class Second_Page extends AppCompatActivity {
         int sk_time = Integer.parseInt(skirts_time.getText().toString());
         int skirts = clothes[3];
 
-        Intent intent2 = new Intent(getBaseContext(), Third_Page.class);
+        Intent intent2 = new Intent(Second_Page.this, Third_Page.class);
 
-        int total = (pants*pants_water) + (shirts*shirts_water) + (dresses*dresses_water) + (skirts*skirts_water);
+        int counter = 0;
+        double total = (pants*pants_water) + (shirts*shirts_water) + (dresses*dresses_water) + (skirts*skirts_water);
+        double expected, saved;
+        expected = ((pants/3)*p_time*pants_water)+ ((shirts/3)*sh_time*shirts_water) + ((skirts/3)*sk_time*skirts_water) + ((dresses/3)*d_time*dresses_water);
+        saved = expected - total;
+        if(saved < 0){
+            saved = 0;
+        }
 
-        if(p_time>=3){
-            total -= (pants*pants_water);
+        if(p_time <= 3){
+            counter++;
         }
-        if(sh_time>=3){
-            total -= (shirts*shirts_water);
+        if(sh_time <= 3){
+            counter++;
         }
-        if(d_time>=3){
-            total -= (dresses*dresses_water);
+        if(d_time <= 3){
+            counter++;
         }
-        if(sk_time>=3){
-            total -= (skirts*skirts_water);
+        if(sk_time <= 3){
+            counter++;
         }
 
         intent2.putExtra("total", total);
+        intent2.putExtra("saved", saved);
+        intent2.putExtra("counter", counter);
+
 
         startActivity(intent2);
 

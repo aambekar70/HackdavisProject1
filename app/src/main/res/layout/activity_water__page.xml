@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Water_Page">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.john.waveview.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wave_view"
+        android:background="#ff702e8c"
+        app:above_wave_color="@android:color/darker_gray"
+        app:blow_wave_color="@android:color/white"
+        app:progress="80"
+        app:wave_height="large"
+        app:wave_hz="normal"
+        app:wave_length="middle"></com.john.waveview.WaveView>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar_id"
+        android:layout_alignBottom="@id/seekbar_id"/>
+
+
+</RelativeLayout>

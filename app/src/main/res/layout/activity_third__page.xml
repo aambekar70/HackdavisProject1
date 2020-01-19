@@ -4,27 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Third_Page">
+    tools:context=".Third_Page"
+    android:background="@drawable/gradient_final">
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textSize="36sp"
-        android:ems="10"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:id="@+id/result"
-        />
+        android:layout_width="272dp"
+        android:layout_height="269dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/water_used_circle"
+        android:ems="10"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="36sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+
+    <TextView
+        android:id="@+id/saved_water"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/water_used_circle"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/sustainable_clothing"
+        android:layout_width="118dp"
+        android:layout_height="121dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/water_used_circle"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="36sp" />
+
+    <ImageButton
+        android:id="@+id/water_droplet"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
         android:layout_marginRight="100dp"
         android:layout_marginBottom="30dp"
+        android:background="#00383434"
+        android:src="@drawable/water_droplet" />
+
+    <ImageButton
+        android:id="@+id/earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#00070606"
+        android:src="@drawable/globe"
+        android:tint="#000A0101" />
+
+
 
 </RelativeLayout>
