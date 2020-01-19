@@ -3,6 +3,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,6 +26,9 @@ public class Water_Page extends AppCompatActivity {
 
         seekbar = (SeekBar)findViewById(R.id.seekbar_id);
         waveView = (WaveView) findViewById(R.id.wave_view);
+
+        TextView textView_main = (TextView) findViewById(R.id.textView_main);
+        textView_main.setText("42 years worth of water!");
 
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override

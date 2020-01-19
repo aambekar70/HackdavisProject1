@@ -23,17 +23,19 @@ public class Third_Page extends AppCompatActivity {
 
         double t = intent3.getDoubleExtra("total", 0);
         double s = intent3.getDoubleExtra("saved", 0);
+        double total_years;
         int counter = intent3.getIntExtra("counter", 0);
 
         TextView result = (TextView) findViewById(R.id.result);
         TextView saved_water = (TextView) findViewById(R.id.saved_water);
         TextView sustainable_clothing = (TextView) findViewById(R.id.sustainable_clothing);
 
+        total_years = (t*0.78)/365;
 
 
         result.setText((int)t + "");
-        saved_water.setText((int)s + "");
-        sustainable_clothing.setText(counter + "");
+        saved_water.setText("                             " + (int)s + "");
+        sustainable_clothing.setText("                             " + counter + "");
 
 
         ImageButton water_droplet = (ImageButton) findViewById(R.id.water_droplet);

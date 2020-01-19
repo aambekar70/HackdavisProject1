@@ -1,14 +1,19 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <solid android:color="#428EE7"/>
-
+    <solid android:color="#05BEEE"/>
     <stroke
-        android:width="4dp"
-        android:color="#428EE7"
-        android:shadowColor="#428EE7"
+        android:width="20dp"
+        android:color="#600048FF"
         android:shadowDx="0.0"
-        android:shadowDy="0.0"/>
-
+        android:shadowDy="0.0"
+        android:shadowRadius ="100"
+        >
+    </stroke>
+    <!-- <stroke-->
+    <!-- android:width="4dp"-->
+    <!-- android:color="#85CFFF"-->
+    <!-- android:shadowColor="#85CFFF"-->
+    <!-- android:shadowDx="0.0"-->
+    <!-- android:shadowDy="0.0"/>-->
     <corners
         android:bottomLeftRadius="500dp"
         android:bottomRightRadius="500dp"

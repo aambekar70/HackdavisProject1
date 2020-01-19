@@ -7,10 +7,11 @@
     tools:context=".Water_Page">
 
     <com.john.waveview.WaveView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/wave_view"
-        android:background="#ff702e8c"
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:background="#00BCD4"
+        android:elevation="4dp"
         app:above_wave_color="@android:color/darker_gray"
         app:blow_wave_color="@android:color/white"
         app:progress="80"
@@ -18,11 +19,31 @@
         app:wave_hz="normal"
         app:wave_length="middle"></com.john.waveview.WaveView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:elevation="50dp"
+        android:alpha="0.5"/>
+
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seekbar_id"
-        android:layout_alignBottom="@id/seekbar_id"/>
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textView_main"
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="#00BCD4"
+        android:textSize="40sp" />
 
 
 </RelativeLayout>

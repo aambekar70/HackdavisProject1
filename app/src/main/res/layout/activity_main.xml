@@ -15,7 +15,7 @@
         android:fontFamily="sans-serif-light"
         android:ems="10"
         android:textColor="#FFFFFF"
-        android:hint="[ ]"
+        android:hint="[   ]"
         android:inputType="number"
         android:layout_marginRight="60dp"
         android:layout_marginLeft="295dp"
@@ -32,7 +32,7 @@
         android:fontFamily="sans-serif-light"
         android:ems="10"
         android:textColor="#FFFFFF"
-        android:hint="[ ]"
+        android:hint="[   ]"
         android:inputType="number"
         android:layout_marginRight="60dp"
         android:layout_marginLeft="295dp"
@@ -50,7 +50,7 @@
         android:ems="10"
 
         android:textColor="#FFFFFF"
-        android:hint="[ ]"
+        android:hint="[   ]"
         android:inputType="number"
         android:layout_marginRight="60dp"
         android:layout_marginLeft="295dp"
@@ -67,7 +67,7 @@
         android:fontFamily="sans-serif-light"
         android:ems="10"
         android:textColor="#FFFFFF"
-        android:hint="[ ]"
+        android:hint="[   ]"
         android:inputType="number"
         android:layout_marginRight="60dp"
         android:layout_marginLeft="295dp"
@@ -93,7 +93,7 @@
         android:layout_width="375dp"
         android:layout_height="108dp"
         android:background="@drawable/rect_clothes"
-        android:text=" shirts"
+        android:text="   shirts"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:fontFamily="sans-serif-light"
@@ -119,12 +119,12 @@
         android:layout_marginRight="20dp"
         android:gravity="center_vertical"
         android:elevation="10dp"
-        android:text=" pants" />
+        android:text="   pants" />
     <TextView
         android:layout_width="375dp"
         android:layout_height="108dp"
         android:background="@drawable/rect_clothes"
-        android:text=" dresses"
+        android:text="   dresses"
         android:gravity="center_vertical"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
@@ -149,7 +149,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:gravity="center_vertical"
-        android:text=" jackets" />
+        android:text="   jackets" />
     <TextView
         android:layout_width="330dp"
         android:elevation="15dp"

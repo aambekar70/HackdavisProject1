@@ -6,53 +6,93 @@
     android:layout_height="match_parent"
     tools:context=".Third_Page"
     android:background="@drawable/gradient_final">
-
-
     <TextView
         android:id="@+id/result"
-        android:layout_width="272dp"
-        android:layout_height="269dp"
-        android:layout_centerInParent="true"
+        android:layout_width="303dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="260dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="70dp"
         android:background="@drawable/water_used_circle"
         android:ems="10"
         android:gravity="center"
         android:padding="10dp"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="36sp" />
-
-
+        android:textColor="#E5EAEC"
+        android:textSize="70sp" />
+    <TextView
+        android:id="@+id/resulttext"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="WATER WASTED"
+        android:textColor="#E5EAEC"
+        android:textSize="30sp" />
     <TextView
         android:id="@+id/saved_water"
-        android:layout_width="150dp"
-        android:layout_height="155dp"
+        android:layout_width="190dp"
+        android:layout_height="195dp"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="85dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/water_used_circle"
         android:ems="10"
-        android:gravity="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="36sp" />
+        android:gravity="top|center_horizontal|center"
+        android:textColor="#E5EAEC"
+        android:textSize="40sp" />
+    <TextView
 
+        android:id="@+id/saved_watertext"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text = "WATER SAVED"
+        android:fontFamily="sans-serif-light"
+        android:textColor= "#E5EAEC"
+        android:textSize="24sp" />
     <TextView
         android:id="@+id/sustainable_clothing"
-        android:layout_width="118dp"
-        android:layout_height="121dp"
+        android:layout_width="130dp"
+        android:layout_height="133dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="88dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="100dp"
         android:background="@drawable/water_used_circle"
         android:ems="10"
+        android:gravity="top|center_horizontal|center"
+        android:textColor="#E5EAEC"
+        android:textSize="30sp" /><![CDATA[
+/>
+]]>
+    <TextView
+        android:id="@+id/sustainable_clothingtext"
+        android:layout_width="100dp"
+        android:layout_height="121dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="36sp" />
-
+        android:text="CLOTHES WASTED"
+        android:textColor="#E5EAEC"
+        android:textSize="15sp" />
     <ImageButton
         android:id="@+id/water_droplet"
         android:layout_width="95dp"
@@ -76,7 +116,5 @@
         android:background="#00070606"
         android:src="@drawable/globe"
         android:tint="#000A0101" />
-
-
 
 </RelativeLayout>
