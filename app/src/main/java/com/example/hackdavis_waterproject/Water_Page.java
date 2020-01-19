@@ -20,7 +20,7 @@ public class Water_Page extends AppCompatActivity {
         Intent water_Intent = getIntent();
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_water__page);
 
 
         seekbar = (SeekBar)findViewById(R.id.seekbar_id);

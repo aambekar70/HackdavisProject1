@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         EditText pants = (EditText) findViewById(R.id.pants);
         EditText shirts = (EditText) findViewById(R.id.shirts);
         EditText dresses = (EditText) findViewById(R.id.dresses);
-        EditText skirts = (EditText) findViewById(R.id.skirts);
+        EditText skirts = (EditText) findViewById(R.id.jackets);
 
         int num1 = Integer.parseInt(pants.getText().toString());
         int num2 = Integer.parseInt(shirts.getText().toString());
